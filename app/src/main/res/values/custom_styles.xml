@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Bordas do campo Imagem arredondada-->
+    <style name="RoundedSquare">
+        <item name="cornerSize">8%</item>
+        <item name="android:background">@color/colorStateEnabled</item>
+    </style>
+
+
+</resources>

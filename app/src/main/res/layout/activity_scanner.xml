@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tela"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/zxing_barcode_scanner"
+    tools:context=".Scanner">
+
+    <Button
+        android:id="@+id/Questoes"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1.2mm"
+        android:layout_marginEnd="3mm"
+        android:background="@drawable/botao_ajuda"
+        android:drawableEnd="@drawable/inta"
+        android:drawablePadding="9mm"
+        android:onClick="Ajuda"
+        android:paddingRight="1.2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </Button>
+
+    <ToggleButton
+        android:id="@+id/Flash"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/botaoflash"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toBottomOf="@+id/Questoes"
+        app:layout_constraintEnd_toStartOf="@+id/Questoes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/zxing_barcode_scanner"
+        tools:ignore="NotSibling"></ToggleButton>
+
+    <ToggleButton
+        android:id="@+id/back"
+        android:layout_width="36dp"
+        android:layout_height="39dp"
+        android:layout_marginRight="109dp"
+        android:background="@drawable/botaoback"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintBottom_toBottomOf="@+id/Flash"
+        app:layout_constraintEnd_toStartOf="@+id/Flash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Flash">
+
+    </ToggleButton>
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultFocusHighlightEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:zxing_scanner_layout="@layout/custom_scanner_codbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="#02395E"></androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blu"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutcod"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="185dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bscan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bscan">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/campo_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Código"
+            android:textColorHint="#A9000000"
+            app:boxBackgroundColor="#E1FFFFFF"
+            app:boxStrokeColor="#16C803"
+            app:hintTextColor="#16C803">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_codigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingTop="3.7mm"
+                android:paddingBottom="-9.0mm"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/lupa_bnt"
+            android:layout_width="24dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="159dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/botaobusca"
+            app:backgroundTint="@null"
+            android:gravity="center">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutnome"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="-44dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Nome Produto"
+            android:textColorHint="#90000000"
+            app:boxBackgroundColor="#E1FFFFFF"
+            app:boxStrokeColor="#01BCD5"
+            app:hintTextColor="#01BCD5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingTop="3.7mm"
+                android:paddingBottom="-9.0mm"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="InOrMmUsage" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutdescricao"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="185dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Descrição"
+            android:textColorHint="#90000000"
+            app:boxBackgroundColor="#E1FFFFFF"
+            app:boxStrokeColor="#0374D8"
+            app:hintTextColor="#0374D8">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingTop="3.7mm"
+                android:paddingBottom="-9.0mm"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="157dp"
+        android:layout_height="36dp"
+        android:background="@drawable/botao2"
+        android:text="Buscar"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_buscabtn"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.485" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        android:layout_width="157dp"
+        android:layout_height="36dp"
+        android:background="@drawable/botao2"
+        android:onClick="limpa"
+        android:text="Limpar"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_borracha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.274"
+        tools:ignore="OnClick" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete"
+        android:layout_width="157dp"
+        android:layout_height="38dp"
+        android:background="@drawable/botao2"
+        android:text="Deletar"
+        android:textAlignment="center"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_deleta"
+        app:layout_constraintBottom_toTopOf="@+id/sobre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sobre"
+        android:layout_width="157dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/botao2"
+        android:text="Sobre"
+        android:textAlignment="center"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_copyright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bscan"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/botao"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_cod"
+        app:iconGravity="textStart"
+        app:iconPadding="-2dp"
+        app:iconTint="#E2E2E3E6"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayoutnome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="157dp"
+        android:layout_height="38dp"
+        android:background="@drawable/botao2"
+        android:text="cadastrar"
+        android:textSize="14dp"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_novoprod"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_img"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/id_img"
+        android:layout_width="162dp"
+        android:layout_height="162.7dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_photo"
+        android:backgroundTint="#F7222121"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayoutdescricao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayoutnome"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:strokeColor="#F80000"
+        app:strokeWidth="0dp">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

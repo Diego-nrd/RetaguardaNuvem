@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "84368054369",
+    "project_id": "retaguarda-61d2b",
+    "storage_bucket": "retaguarda-61d2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84368054369:android:80581ec327093fad4df220",
+        "android_client_info": {
+          "package_name": "dni.com.retaguarda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84368054369-l8a3og5hncrm1uuhh2r8i5311cshjho6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqFePUNQm0tOx_395v8RiKIyiEiO5c9TQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84368054369-l8a3og5hncrm1uuhh2r8i5311cshjho6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84368054369:android:4f6a5fae809259d64df220",
+        "android_client_info": {
+          "package_name": "dni.com.retaguardanuvem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84368054369-l8a3og5hncrm1uuhh2r8i5311cshjho6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqFePUNQm0tOx_395v8RiKIyiEiO5c9TQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84368054369-l8a3og5hncrm1uuhh2r8i5311cshjho6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
